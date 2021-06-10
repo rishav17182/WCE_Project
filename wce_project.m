@@ -1,13 +1,12 @@
 clc;
 clear all
 close all;
-
+% rishav has started doing changes in this code
 tic; 
-
 input_dist = [28;32;36;40;44;48;52;56;60;64;68;72;76;80;84;88;92;96;100;106];  % Distance of car from traffic light (28 - 106)m
 distance_road = length(input_dist);   % Total instances taken in our real time simulation
 p= 0;          % This is a random variable to break the while loop
-detect = [];   % State of traffic light
+detect = [];       % State of traffic light
 percent = [];  % The percentage of particular traffic light in that transmitter circle
 
 while distance_road>0  % all instances
